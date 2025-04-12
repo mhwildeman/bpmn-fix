@@ -37,4 +37,4 @@ or
 ```npm start {path_to_bpmn} > {new_location}```
 
 **Example**
-```npm start ./thales.training.passwordreset-login-two-fa.bpmn20.xml > ~/Desktop/thales.training.passwordreset-login-two-fa.fixed.bpmn20.xml```
+```npm start ./demo/thales.training.passwordreset-login-two-fa.bpmn20.xml > ~/Desktop/thales.training.passwordreset-login-two-fa.fixed.bpmn20.xml```
