@@ -1,9 +1,9 @@
 # BPMN Fixer
-This script is taking an existing BPMN as input. It gives al elements an ID (if they are omitted) and all nodes a name (if they are omitted).
+This script is taking an existing BPMN as input. It gives all elements an ID (if they are omitted) and all nodes a name (if they are omitted).
 
-It will then give all elements and `incoming` and `outgoing` node and will try to auto layout the resulting XML.
+It will then give all elements an `incoming` an `outgoing` element and will try to auto layout the resulting XML.
 
-The XML that is exported can be opened using camundo modeler. The resulting XML should be unaltered in behaviour, but will have a BPMN Layout included.
+The XML that is exported can be opened using for example Camunda modeler. The resulting XML should be unaltered in behaviour, but will have a BPMN Layout included.
 
 
 ### Requirements
