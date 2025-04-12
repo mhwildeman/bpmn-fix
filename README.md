@@ -28,6 +28,11 @@ nvm current # Should print "v22.14.0".
 npm -v # Should print "10.9.2".
 ```
 
+Now install required packages
+```
+npm install
+``
+
 ### Usage
 To run script, either use
 ```node index.js {path_to_bpmn} > {new_location}```

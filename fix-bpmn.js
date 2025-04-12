@@ -36,8 +36,6 @@ export async function fixIDs(xmlStr) {
     }
   });
 
-  console.log(inOutComing);
-
   // xmlStrUpdated contains new id and the added process
   const {
     xml: updatedXML
