@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "bpmn-auto-layout": "^1.0.0",
+    "uuid-v4": "^0.1.0",
+    "xml2js": "^0.6.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
