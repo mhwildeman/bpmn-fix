@@ -43,5 +43,5 @@ or
 
 **Example**
 ```
-npm start ./demo/thales.training.passwordreset-login-two-fa.bpmn20.xml > ~/Desktop/thales.training.passwordreset-login-two-fa.fixed.bpmn20.xml
+node index.js ./demo/thales.training.passwordreset-login-two-fa.bpmn20.xml > ~/Desktop/thales.training.passwordreset-login-two-fa.fixed.bpmn20.xml
 ```
