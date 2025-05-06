@@ -28,11 +28,28 @@ export async function fixIDs(xmlStr) {
         inOutComing[element.sourceRef.id].outgoing = inOutComing[element.sourceRef.id].outgoing || [];
         inOutComing[element.sourceRef.id].outgoing.push(element.id);
       }
+
+      if(!element.targetRef || !element.sourceRef){
+        throw new Error("No valid SequenceFlowß");
+      }
+
+      if (element.sourceRef.$type === 'bpmn:ExclusiveGateway' && typeof element.name == 'undefined'){
+        element.set('name', String(element.id).replaceAll('_',' '));
+      }
+
     }
     else {
-      if (typeof element.name === 'undefined') {
-        element.set('name', element.id)
+      if (element.$type !== 'bpmn:ExclusiveGateway' && typeof element.name === 'undefined') {
+        element.set('name', String(element.id).replaceAll('_',' '));
       }
+      if (element.$type === 'bpmn:ExclusiveGateway')
+      {
+        element.set('name', '')
+      }
+      
+      //Apperantly the name tag is used for business logic (in stead of id tag that should be used for these purposes)
+      //element.set('name', String(element.name).replaceAll('_',' '));
+      
     }
   });
 

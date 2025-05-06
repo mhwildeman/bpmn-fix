@@ -12,10 +12,11 @@ let path = process.argv[2];
 
 try {
     const diagramXML = fs.readFileSync(path, 'utf8');
-    const repairedXML = await fixIDs(diagramXML);
-    const diagramWithLayoutXML = await layoutProcess(repairedXML);
+    let repairedXML = await fixIDs(diagramXML);
 
-    console.log(diagramWithLayoutXML);
+    repairedXML = await layoutProcess(repairedXML);
+    
+    console.log(repairedXML);
 
 } catch (err) {
     console.error(err);
